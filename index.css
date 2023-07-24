@@ -4,6 +4,13 @@ font-family: 'Open Sans', sans-serif; */
 
 * {
   margin: 0;
+  background-color: #f9f9f9;
+}
+
+.profilePicture {
+  width: 9%;
+  height: auto;
+  border-radius: 50%;
 }
 
 ol {
@@ -11,10 +18,9 @@ ol {
 }
 
 .calendarContainer {
-  display: flex;
-  flex-direction: row;
-  gap: 2rem;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: repeat(3, 12rem);
+  gap: 1rem;
 }
 
 .monthContainer {
@@ -28,6 +34,7 @@ ol {
   text-decoration: none;
 
   font-family: 'Montserrat', sans-serif;
+  font-size: 0.8rem;
   font-weight: bold;
   color: #3a4b5c;
 }
@@ -35,9 +42,10 @@ ol {
 .gridWeek {
   display: grid;
   grid-template-columns: repeat(7, 1fr);
-  gap: 0.8rem;
+  gap: 0.6rem;
 
   font-family: 'Montserrat', sans-serif;
+  font-size: 0.5rem;
   font-weight: bold;
   color: #3a4b5c;
 }
@@ -47,9 +55,10 @@ ol {
 
   display: grid;
   grid-template-columns: repeat(7, 1rem);
-  grid-template-rows: repeat(7, 1fr);
-  gap: 1rem;
+  grid-template-rows: repeat(6, 1fr);
+  gap: 0.11rem;
 
   font-family: 'Open Sans', sans-serif;
+  font-size: 0.6rem;
   color: #fca68a;
 }
