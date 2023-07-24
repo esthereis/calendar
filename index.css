@@ -1,0 +1,55 @@
+/* font-family: 'Dancing Script', cursive;
+font-family: 'Montserrat', sans-serif;
+font-family: 'Open Sans', sans-serif; */
+
+* {
+  margin: 0;
+}
+
+ol {
+  list-style-type: none;
+}
+
+.calendarContainer {
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+.monthContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 0.5rem;
+}
+
+.monthName {
+  text-decoration: none;
+
+  font-family: 'Montserrat', sans-serif;
+  font-weight: bold;
+  color: #3a4b5c;
+}
+
+.gridWeek {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 0.8rem;
+
+  font-family: 'Montserrat', sans-serif;
+  font-weight: bold;
+  color: #3a4b5c;
+}
+
+.gridDays a {
+  text-decoration: none;
+
+  display: grid;
+  grid-template-columns: repeat(7, 1rem);
+  grid-template-rows: repeat(7, 1fr);
+  gap: 1rem;
+
+  font-family: 'Open Sans', sans-serif;
+  color: #fca68a;
+}
