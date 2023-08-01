@@ -4,6 +4,15 @@
   background-color: #f9f9f9;
 }
 
+.pageLayout {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+
+  margin: 0.6rem 2rem;
+  height: 100vh;
+}
+
 .fontMontserrat {
   font-family: 'Montserrat', sans-serif;
   font-weight: bold;
@@ -23,14 +32,6 @@
 .boxShadow:hover {
   -webkit-box-shadow: 0px 1px 15px -6px #000000;
   box-shadow: 0px 1px 15px -6px #000000;
-}
-
-.pageLayout {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-
-  margin: 0.6rem 2rem;
 }
 
 .leftContainer {
@@ -117,133 +118,97 @@
   margin-top: auto;
 }
 
-.hiddenHoverIcons {
-  opacity: 0;
-}
-
-.hiddenHoverIcons:hover {
-  opacity: 1;
-}
-
-ol {
-  list-style-type: none;
-  padding: 0;
-}
-
-.calendarContainer {
+.scheduleGrid {
   display: grid;
-  grid-template-columns: repeat(3, 9.5rem);
-  gap: 1rem;
-  position: relative;
+  grid-template-rows: repeat(11, 1.5rem);
+  grid-template-columns: 10rem 30rem;
 }
 
-/* Put the arrows in the calendar */
-/* .arrowLeftIcon {
-  position: absolute;
-  left: -2rem;
+.hourColumn,
+.hourNoteColumn {
+  border-bottom: 1px dashed #3a4b5c;
+
+  height: 1.5rem;
+
+  color: #fca68a;
+  font-size: 0.8rem;
 }
 
-.arrowRightIcon {
-  position: absolute;
-} */
+.hourColumn {
+  border-right: 1px dashed #3a4b5c;
+  text-align: center;
+  cursor: pointer;
+}
 
-.monthContainer {
+.hourNoteColumn {
+  cursor: text;
+}
+
+.transparentHour {
+  color: #bdb5b3;
+}
+
+.dayHeader {
   display: flex;
   flex-direction: column;
-  align-items: flex-end;
-  gap: 0.5rem;
+  /* justify-content: space-between; */
 
-  width: fit-content;
-  padding: 1rem 1rem 0rem;
+  color: #3a4b5c;
+  font-size: 1rem;
 }
 
 .monthName {
-  text-decoration: none;
+  margin-left: auto;
+  margin-bottom: 0.4rem;
+  padding-top: 0.2rem;
+  padding-right: 0.7rem;
 
-  font-size: 0.8rem;
-
-  color: #3a4b5c;
+  font-size: 2rem;
 }
 
-.gridWeek {
-  display: grid;
-  grid-template-columns: repeat(7, 1rem);
-  gap: 0.11rem;
-
-  font-size: 0.5rem;
-  color: #3a4b5c;
-}
-
-.gridDays a {
-  text-decoration: none;
-
-  display: grid;
-  grid-template-columns: repeat(7, 1rem);
-  grid-template-rows: repeat(6, 1fr);
-  gap: 0.11rem;
-
-  font-size: 0.6rem;
-  color: #fca68a;
-}
-
-#clock {
-  width: 30%;
-  height: auto;
-}
-
-.rightContainer {
+.weatherContainer {
   display: flex;
   flex-direction: column;
-  gap: 0.5rem;
+  gap: 0.2rem;
 }
 
-#menuIcon {
-  height: 5%;
-  margin: 1rem 0 1rem auto;
-
-  cursor: pointer;
-}
-
-.activitieContainer {
+.todaysWeather {
   display: flex;
   flex-direction: row;
+  justify-content: center;
+  align-items: center;
 
-  width: 22rem;
-
-  cursor: pointer;
-}
-
-.studyingSetImage {
-  height: 9.5rem; /*1.5rem more then activities box*/
-  width: auto;
-}
-
-.activitiesBox {
-  width: inherit;
-
-  display: flex;
-  flex-direction: column;
-  padding: 0.5rem 1rem 1rem;
+  gap: 0.5rem;
+  height: 10rem;
 
   color: #3a4b5c;
 }
 
-.activitiesBox p {
+.weekWeather {
+  display: flex;
   font-size: 0.8rem;
 }
 
-.activitiesBox img {
-  margin-left: auto;
+.dayWeather {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  width: 2rem;
+  height: 6rem;
+  padding: 0.4rem;
+
+  color: #3a4b5c;
+  cursor: pointer;
 }
 
-.highlighter {
+.dayWeather img {
+  margin-top: 0.7rem;
+  margin-bottom: 0.7rem;
+}
+
+.highlightDay,
+.highlightDay p,
+.highlightDay img {
   background-color: #fca68a;
-  font-weight: bolder;
-
-  width: fit-content;
-  padding: 0.5%;
-}
-
-.addActivitieIcon {
-  margin-left: 50%;
 }

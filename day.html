@@ -2,6 +2,177 @@
 <html lang="en">
   <head>
     <title>Day</title>
+    <link rel="stylesheet" href="./day.css" />
   </head>
-  <body></body>
+  <body>
+    <div class="pageLayout">
+      <div class="leftContainer">
+        <div class="userMenu">
+          <div>
+            <img
+              class="profilePicture"
+              src="./images/profile.jpg"
+              alt="profilePicture"
+            />
+          </div>
+          <div>
+            <span class="name fontMontserrat">My Calendar</span>
+            <p class="calendars fontOpenSans">2 calendars</p>
+          </div>
+        </div>
+        <div class="goalsContainer">
+          <h4 class="goalsTitle fontMontserrat">To Do:</h4>
+          <div class="checkboxContainer goalsList">
+            <img class="icons" src="./images/square.svg" alt="squareIcon" />
+            <p class="fontOpenSans">Practice yoga;</p>
+          </div>
+          <div class="checkboxContainer goalsList">
+            <img class="icons" src="./images/square.svg" alt="squareIcon" />
+            <p class="fontOpenSans">Finish math homework;</p>
+          </div>
+          <div class="checkboxContainer goalsList">
+            <img class="icons" src="./images/square.svg" alt="squareIcon" />
+            <p class="fontOpenSans">Clean the bedroom</p>
+          </div>
+          <img
+            class="addIcon icons"
+            src="./images/plus-square.svg"
+            alt="plusIcon"
+          />
+        </div>
+        <div class="footerContact">
+          <a href="https://github.com/esthereis" target="_blank"
+            ><img class="icons" src="./images/github.svg" alt="gitHubIcon"
+          /></a>
+          <a href="https://www.linkedin.com/in/esther-reis-391525285/"
+            ><img class="icons" src="./images/linkedin.svg" alt="linkedInIcon"
+          /></a>
+          <a href="mailto:estherjuliane@gmail.com"
+            ><img class="icons" src="./images/mail.svg" alt="emailIcon"
+          /></a>
+        </div>
+      </div>
+      <div class="scheduleGrid">
+        <div class="fontMontserrat">
+          <p class="transparentHour hourColumn fontOpenSans">01:00 h</p>
+          <p class="transparentHour hourColumn fontOpenSans">02:00 h</p>
+          <p class="transparentHour hourColumn fontOpenSans">03:00 h</p>
+          <p class="transparentHour hourColumn fontOpenSans">04:00 h</p>
+          <p class="transparentHour hourColumn fontOpenSans">05:00 h</p>
+          <p class="transparentHour hourColumn fontOpenSans">06:00 h</p>
+          <p class="hourColumn fontOpenSans">07:00 h</p>
+          <p class="hourColumn fontOpenSans">08:00 h</p>
+          <p class="hourColumn fontOpenSans">09:00 h</p>
+          <p class="hourColumn fontOpenSans">10:00 h</p>
+          <p class="hourColumn fontOpenSans">11:00 h</p>
+          <p class="hourColumn fontOpenSans">12:00 h</p>
+          <p class="hourColumn fontOpenSans">13:00 h</p>
+          <p class="hourColumn fontOpenSans">14:00 h</p>
+          <p class="hourColumn fontOpenSans">15:00 h</p>
+          <p class="hourColumn fontOpenSans">16:00 h</p>
+          <p class="hourColumn fontOpenSans">17:00 h</p>
+          <p class="hourColumn fontOpenSans">18:00 h</p>
+          <p class="transparentHour hourColumn fontOpenSans">19:00 h</p>
+          <p class="transparentHour hourColumn fontOpenSans">20:00 h</p>
+          <p class="transparentHour hourColumn fontOpenSans">21:00 h</p>
+          <p class="transparentHour hourColumn fontOpenSans">22:00 h</p>
+          <p class="transparentHour hourColumn fontOpenSans">23:00 h</p>
+          <p class="transparentHour hourColumn fontOpenSans">24:00 h</p>
+        </div>
+        <div>
+          <div class="hourNoteColumn"></div>
+          <div class="hourNoteColumn"></div>
+          <div class="hourNoteColumn"></div>
+          <div class="hourNoteColumn"></div>
+          <div class="hourNoteColumn"></div>
+          <div class="hourNoteColumn"></div>
+          <div class="hourNoteColumn"></div>
+          <div class="hourNoteColumn"></div>
+          <div class="hourNoteColumn"></div>
+          <div class="hourNoteColumn"></div>
+          <div class="hourNoteColumn"></div>
+          <div class="hourNoteColumn"></div>
+          <div class="hourNoteColumn"></div>
+          <div class="hourNoteColumn"></div>
+          <div class="hourNoteColumn"></div>
+          <div class="hourNoteColumn"></div>
+          <div class="hourNoteColumn"></div>
+          <div class="hourNoteColumn"></div>
+          <div class="hourNoteColumn"></div>
+          <div class="hourNoteColumn"></div>
+          <div class="hourNoteColumn"></div>
+          <div class="hourNoteColumn"></div>
+          <div class="hourNoteColumn"></div>
+          <div class="hourNoteColumn"></div>
+        </div>
+      </div>
+
+      <div class="rightContainer">
+        <div class="weatherContainer">
+          <div class="dayHeader">
+            <p class="fontMontserrat">Jan, 10</p>
+            <p class="fontOpenSans">Tuesday</p>
+          </div>
+          <!-- 
+          <img src="./images/menu.svg" alt="" /> -->
+          <div class="todaysWeather boxShadow">
+            <p class="fontMontserrat">Amsterdam, NL</p>
+            <img src="./images/cloud.svg" alt="cloudIcon" />
+            <p class="fontMontserrat">6 ºC</p>
+          </div>
+
+          <div class="weekWeather">
+            <div class="dayWeather boxShadow">
+              <p class="fontMontserrat">Mon</p>
+              <img src="./images/cloud.svg" alt="cloudIcon" />
+              <p class="fontOpenSans">8 ºC</p>
+              <p class="fontOpenSans">4 ºC</p>
+            </div>
+            <div class="dayWeather boxShadow">
+              <p class="fontMontserrat">Tur</p>
+              <img src="./images/cloud-drizzle.svg" alt="cloudDrizzleIcon" />
+              <p class="fontOpenSans">9 ºC</p>
+              <p class="fontOpenSans">7 ºC</p>
+            </div>
+            <div class="dayWeather boxShadow">
+              <p class="fontMontserrat">Wed</p>
+              <img src="./images/cloud-drizzle.svg" alt="cloudDrizzleIcon" />
+              <p class="fontOpenSans">9 ºC</p>
+              <p class="fontOpenSans">4 ºC</p>
+            </div>
+            <div class="highlightDay dayWeather boxShadow">
+              <p class="fontMontserrat">Thu</p>
+              <img
+                src="./images/cloud-lightning.svg"
+                alt="cloudLightningIcon"
+              />
+              <p class="fontOpenSans">10 ºC</p>
+              <p class="fontOpenSans">6 ºC</p>
+            </div>
+            <div class="dayWeather boxShadow">
+              <p class="fontMontserrat">Fri</p>
+              <img src="./images/cloud.svg" alt="cloudIcon" />
+              <p class="fontOpenSans">11 ºC</p>
+              <p class="fontOpenSans">8 ºC</p>
+            </div>
+            <div class="dayWeather boxShadow">
+              <p class="fontMontserrat">Sat</p>
+              <img src="./images/cloud.svg" alt="cloudIcon" />
+              <p class="fontOpenSans">9 ºC</p>
+              <p class="fontOpenSans">6 ºC</p>
+            </div>
+            <div class="dayWeather boxShadow">
+              <p class="fontMontserrat">Sun</p>
+              <img
+                src="./images/cloud-lightning.svg"
+                alt="cloudLightningIcon"
+              />
+              <p class="fontOpenSans">10 ºC</p>
+              <p class="fontOpenSans">4 ºC</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
 </html>
