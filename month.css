@@ -166,15 +166,9 @@
   font-size: 0.8rem;
 }
 
-.weekends,
-.weekends p,
-.addTaskIcon {
-  background: rgb(242, 171, 148);
-  background: linear-gradient(
-    0deg,
-    rgba(242, 171, 148, 1) 0%,
-    rgba(252, 166, 138, 1) 100%
-  );
+.weekends {
+  border: 1px dashed #676f77;
+  background-color: #f9f9f9;
 }
 
 .appointment {
